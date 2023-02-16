@@ -4,10 +4,10 @@ from pymem.process import *
 
 mem = Pymem("HarshDoorstop-Win64-Shipping.exe")
 module = module_from_name(mem.process_handle, "HarshDoorstop-Win64-Shipping.exe").lpBaseOfDll
-offsets1 = [0x18, 0x368, 0x4F0, 0x270, 0x288, 0x520, 0x70]
+offsets1 = [0x260, 0x20, 0x2B0, 0x370, 0x270, 0x260, 0x70]
 
 def GetPointer(base, offsets):
-    addr = mem.read_longlong(base+0x03EC7C20)
+    addr = mem.read_longlong(base+0x03E5E2C0)
     for offset in offsets:
         if offset != offsets[-1]:
             try:
