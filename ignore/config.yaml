@@ -1,0 +1,66 @@
+Engine_Structs.h:
+  CameraCacheEntry:
+    FCameraCacheEntry.FMinimalViewInfo: POV
+Athena_structs.h:
+  Crew:
+    Crew.Players: Players
+AthenaAI_Classes.h:
+  Fauna:
+    AFauna.Name: DisplayName
+Athena_Classes.h:
+  AthenaCharacter:
+    AActor.WieldedItemComponent: WieldedItemComponent
+    AActor.HealthComponent: HealthComponent
+  AthenaPlayerCharacter:
+    AActor.DrowningComponent: DrowningComponent
+  ItemProxy:
+    AItemProxy.AItemInfo: ItemInfo
+  ItemInfo:
+    AItemInfo.UItemDesc: Desc
+  BootyItemInfo:
+    ABootyItemInfo.BootyType: BootyType
+    ABootyItemInfo.Rarity: Rarity
+  Ship:
+    AShip.CrewOwnershipComponent: CrewOwnershipComponent
+    AShip.ShipInternalWaterComponent: ShipInternalWaterComponent
+  HullDamage:
+    AShip.ShipOwningActor: Root
+  CrewOwnershipComponent:
+    UCrewOwnershipComponent.CrewId: CachedCrewId
+  CrewService:
+    ACrewService.Crews: Crews
+  MapTable:
+    AMapTable.MapPins: MapPins
+    AMapTable.ServerCenter: ServerCentreLocation
+    AMapTable.TrackedShips: TrackedShips
+  WieldableItem:
+    AWieldableItem.ItemInfo: ItemInfo
+  Cannon:
+    ACannon.TimePerFire: TimePerFire
+    ACannon.ProjectileSpeed: ProjectileSpeed
+    ACannon.ProjectileGravityScale: ProjectileGravityScale
+    ACannon.ServerPitch: ServerPitch
+Engine_Classes.h:
+  Actor:
+    AActor.rootComponent: RootComponent
+  PlayerState:
+    APlayerState.PlayerName: PlayerName
+  GameInstance:
+    _prefix: UGameInstance.
+    1: LocalPlayers
+  Player:
+    _prefix: ULocalPlayer.
+    1: PlayerController
+  World:
+    _prefix: UWorld.
+    1: OwningGameInstance
+    2: PersistentLevel
+  PlayerController:
+    APlayerController.CameraManager: PlayerCameraManager
+  PlayerCameraManager:
+    APlayerCameraManager.CameraCache: CameraCache
+  Controller:
+    APlayerController.Pawn: Pawn
+    APlayerController.Character: Character
+  Pawn:
+    AActor.PlayerState: PlayerState
